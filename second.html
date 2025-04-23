@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Цветочный рай - Каталог</title>
-    <link rel="stylesheet" href="aa.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Цветочный рай - Каталог</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="aa.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Цветочный рай</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="second.html" class="active">Каталог</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="bg-light py-3 border-bottom">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <h1 class="mb-2 mb-md-0">Цветочный рай</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+          <li class="nav-item"><a href="second.html" class="nav-link active">Каталог</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section class="catalog">
-            <div class="container">
-                <h2>Наши букеты</h2>
-                <div class="bouquets">
-                    <div class="bouquet">
-                        <img src="i (1).webp" width="300" height="275" alt="цветок" class="image">
-                    
-                        <h3>Розовая нежность</h3>
-                        <p>Букет из 25 роз</p>
-                        <p class="price">3 500 руб.</p>
-                    </div>
-                    <div class="bouquet">
-                        <img src="photo_2025-03-25_14-31-35.jpg" width="300" height="275" alt="цветок" class="image">
-                        <h3>Свадебный</h3>
-                        <p>Праздничная композиция</p>
-                        <p class="price">4 200 руб.</p>
-                    </div>
-                    <div class="bouquet">
-                        <img src="photo_2025-03-25_14-36-12.jpg" width="300" height="275" alt="цветок" class="image">
-                        <h3>Весеннее настроение</h3>
-                        <p>Букет из тюльпанов</p>
-                        <p class="price">2 800 руб.</p>
-                    </div>
-                </div>
-                <a href="index.html" class="btn">Вернуться на главную</a>
+  <main class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Наши букеты</h2>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="i (1).webp" class="card-img-top" alt="Розовая нежность" width="300" height="275">
+            <div class="card-body">
+              <h5 class="card-title">Розовая нежность</h5>
+              <p class="card-text">Букет из 25 роз</p>
+              <p class="card-text fw-bold">3 500 руб.</p>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>© 2023 Цветочный рай. Проще позвонить, чем у других покупать.</p>
-            <p>Телефон: +7 (988) 456-78-90</p>
+          </div>
         </div>
-    </footer>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="photo_2025-03-25_14-31-35.jpg" class="card-img-top" alt="Свадебный" width="300" height="275">
+            <div class="card-body">
+              <h5 class="card-title">Свадебный</h5>
+              <p class="card-text">Праздничная композиция</p>
+              <p class="card-text fw-bold">4 200 руб.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="photo_2025-03-25_14-36-12.jpg" class="card-img-top" alt="Весеннее настроение" width="300" height="275">
+            <div class="card-body">
+              <h5 class="card-title">Весеннее настроение</h5>
+              <p class="card-text">Букет из тюльпанов</p>
+              <p class="card-text fw-bold">2 800 руб.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="index.html" class="btn btn-primary">Вернуться на главную</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1">© 2023 Цветочный рай. Проще позвонить, чем у других покупать.</p>
+      <p class="mb-0">Телефон: +7 (988) 456-78-90</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
